@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Deno Server debug",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "deno",
+        "runtimeArgs": ["run", "--inspect-brk", "-A", "http_server.ts"],
+        "port": 9229
+      },     
+      {
+        "name": "Deno Server",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "deno",
+        "runtimeArgs": ["run", "--allow-net", "http_server.ts"],
+        "port": 9229
+      },
+      {
+        "name": "Deno Cat",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "deno",
+        "runtimeArgs": ["run", "--allow-read", "cat.ts", "http_server.ts"],
+        "port": 9229
+      }
+    ]
+  }
+  
