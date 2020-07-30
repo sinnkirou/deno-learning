@@ -63,6 +63,15 @@
         "runtimeExecutable": "deno",
         "runtimeArgs": ["run", "lodash.ts"],
         "port": 9229
+      },
+      {
+        "name": "Deno Todo",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "deno",
+        "runtimeArgs": ["run", "-A", "todos/index.ts"],
+        "port": 9229
       }
     ]
   }
